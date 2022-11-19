@@ -1,0 +1,27 @@
+$size: 200px;
+
+.imgContainerStyle {
+  display: flex;
+}
+
+.imgStyle {
+  width: $size;
+  margin: auto;
+  opacity: 100%;
+  animation: opacityAnimation 4s infinite;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
